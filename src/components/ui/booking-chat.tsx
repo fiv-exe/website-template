@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { X, Send } from "lucide-react";
 
 // ─── Configure your webhook URL here ───
-const WEBHOOK_URL = "https://your-webhook-url.com/api/chat";
+const WEBHOOK_URL = "https://n8n.aivanov.agency/webhook/20a38992-85e6-400d-91e5-380d3381024e";
 
 interface Message {
   id: string;
