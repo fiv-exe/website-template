@@ -144,9 +144,8 @@ export default function BookingChat() {
       {/* Chat Window */}
       <div
         className={`fixed z-[9991] transition-all duration-300 ease-out
-          bottom-0 left-0 right-0 md:bottom-auto md:left-auto md:right-auto
-          md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2
-          w-full md:w-[480px] md:max-h-[640px]
+          bottom-0 left-0 right-0 w-full
+          md:w-[480px] md:max-h-[640px] md:inset-0 md:m-auto md:h-[600px]
           ${
             isOpen
               ? "translate-y-0 opacity-100 pointer-events-auto"
