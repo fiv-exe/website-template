@@ -24,7 +24,7 @@ export default function Footer() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-[0.72rem] uppercase tracking-[0.15em] text-white/60 hover:text-emerald-200 transition-colors duration-300"
+                className="text-[0.72rem] uppercase tracking-[0.15em] text-white hover:text-emerald-200 transition-colors duration-300"
               >
                 {link.label}
               </a>
@@ -34,22 +34,22 @@ export default function Footer() {
 
         {/* Contact summary */}
         <div className="flex justify-center gap-8 md:gap-12 mb-10 flex-wrap">
-          <span className="text-sm text-white/50 font-light">
+          <span className="text-sm text-white/90 font-light">
             [Ihre Strasse], [Ihre PLZ] [Ihre Stadt]
           </span>
-          <span className="text-sm text-white/50 font-light">
+          <span className="text-sm text-white/90 font-light">
             [Ihre Telefonnummer]
           </span>
-          <span className="text-sm text-white/50 font-light">
+          <span className="text-sm text-white/90 font-light">
             [Ihre E-Mail]
           </span>
         </div>
 
         {/* Divider */}
-        <div className="w-16 h-px bg-white/15 mx-auto mb-6" />
+        <div className="w-16 h-px bg-white/40 mx-auto mb-6" />
 
         {/* Copyright */}
-        <p className="text-xs text-white/35">
+        <p className="text-xs text-white/70">
           &copy; [Jahr] [Ihr Unternehmen] &mdash; [Ihre Branche] [Ihre Stadt].
           Alle Rechte vorbehalten.
         </p>

@@ -46,11 +46,11 @@ export default function Navbar() {
               className={`text-[0.78rem] uppercase tracking-[0.18em] font-light relative pb-1 transition-colors duration-300 group ${
                 link.highlight
                   ? scrolled
-                    ? "text-teal-600"
-                    : "text-teal-300"
+                    ? "text-teal-600 border border-teal-600 px-4 py-2 hover:bg-teal-600 hover:text-white"
+                    : "text-white border border-white/40 px-4 py-2 hover:bg-white/15"
                   : scrolled
                   ? "text-slate-700"
-                  : "text-white/90"
+                  : "text-white"
               }`}
             >
               {link.label}
