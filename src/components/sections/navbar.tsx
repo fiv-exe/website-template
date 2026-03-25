@@ -21,6 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
+    <>
     <nav
       className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between transition-all duration-500 ${
         scrolled
@@ -66,7 +67,7 @@ export default function Navbar() {
 
       {/* Mobile toggle */}
       <button
-        className="md:hidden flex flex-col gap-1.5 p-2 z-[60]"
+        className="md:hidden flex flex-col gap-1.5 p-2 z-[10000]"
         onClick={() => setOpen(!open)}
         aria-label="Menu"
       >
@@ -95,27 +96,30 @@ export default function Navbar() {
         />
       </button>
 
-      {/* Mobile menu */}
-      <div
-        className={`fixed inset-0 bg-white z-[55] flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden ${
-          open
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-      >
-        {links.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            onClick={() => setOpen(false)}
-            className={`text-sm uppercase tracking-[0.2em] font-light ${
-              link.highlight ? "text-teal-600" : "text-slate-700"
-            }`}
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
     </nav>
+
+    {/* Mobile menu - outside nav to avoid clipping */}
+    <div
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden ${
+        open
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+      }`}
+      style={{ background: "#f8fafb" }}
+    >
+      {links.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          onClick={() => setOpen(false)}
+          className={`text-sm uppercase tracking-[0.2em] font-light ${
+            link.highlight ? "text-teal-600" : "text-slate-700"
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+    </>
   );
 }
