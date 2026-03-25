@@ -7,6 +7,7 @@ import Testimonial from "@/components/sections/testimonial";
 import Booking from "@/components/sections/booking";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/sections/footer";
+import BookingChat from "@/components/ui/booking-chat";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Booking />
       <Contact />
       <Footer />
+      <BookingChat />
     </>
   );
 }
