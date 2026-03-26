@@ -189,7 +189,17 @@ export default function BookingChat() {
                       : "bg-white text-slate-700 rounded-2xl rounded-bl-md shadow-sm border border-slate-100"
                   }`}
                 >
-                  {msg.text}
+                  {msg.sender === "bot" ? (
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: msg.text
+                          .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+                          .replace(/\n/g, "<br/>"),
+                      }}
+                    />
+                  ) : (
+                    msg.text
+                  )}
                 </div>
               </div>
             ))}
