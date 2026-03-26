@@ -231,7 +231,7 @@ export default function BookingChat() {
                 onKeyDown={handleKeyDown}
                 placeholder="Nachricht schreiben..."
                 rows={1}
-                className="flex-1 px-4 py-3 bg-slate-50 rounded-xl text-sm font-light text-slate-800 placeholder:text-slate-300 outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200 resize-none max-h-32 overflow-y-auto"
+                className="flex-1 px-4 py-3 bg-slate-50 rounded-xl text-[16px] font-light text-slate-800 placeholder:text-slate-300 outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200 resize-none max-h-32 overflow-y-auto"
               />
               <button
                 onClick={handleSend}
