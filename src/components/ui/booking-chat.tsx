@@ -27,7 +27,7 @@ export default function BookingChat() {
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => crypto.randomUUID());
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -212,14 +212,14 @@ export default function BookingChat() {
           {/* Input */}
           <div className="px-4 py-3 bg-white border-t border-slate-100 shrink-0">
             <div className="flex items-center gap-2">
-              <input
+              <textarea
                 ref={inputRef}
-                type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Nachricht schreiben..."
-                className="flex-1 px-4 py-3 bg-slate-50 rounded-xl text-sm font-light text-slate-800 placeholder:text-slate-300 outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200"
+                rows={1}
+                className="flex-1 px-4 py-3 bg-slate-50 rounded-xl text-sm font-light text-slate-800 placeholder:text-slate-300 outline-none focus:ring-2 focus:ring-teal-500/30 transition-all duration-200 resize-none max-h-32 overflow-y-auto"
               />
               <button
                 onClick={handleSend}
