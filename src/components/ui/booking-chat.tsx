@@ -15,7 +15,7 @@ interface Message {
 
 const INITIAL_MESSAGE: Message = {
   id: "welcome",
-  text: "Hallo! Ich helfe Ihnen gerne bei der Terminbuchung. Wann möchten Sie vorbeikommen?",
+  text: "Hallo! Ich helfe Ihnen gerne bei der Terminbuchung. Wie kann ich Ihnen helfen?",
   sender: "bot",
   timestamp: new Date(),
 };
