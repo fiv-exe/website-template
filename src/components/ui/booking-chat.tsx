@@ -104,7 +104,7 @@ export default function BookingChat() {
 
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: data.response || data.message || data.reply || "Danke für Ihre Nachricht! Wir melden uns bei Ihnen.",
+        text: data.output || data.response || data.message || data.reply || "Danke für Ihre Nachricht! Wir melden uns bei Ihnen.",
         sender: "bot",
         timestamp: new Date(),
       };
