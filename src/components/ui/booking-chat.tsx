@@ -193,6 +193,8 @@ export default function BookingChat() {
                     <span
                       dangerouslySetInnerHTML={{
                         __html: msg.text
+                          .replace(/BOOKING_DATA:\{[^}]*\}/g, "")
+                          .trim()
                           .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
                           .replace(/\n/g, "<br/>"),
                       }}
