@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="pt-4 animate-fade-up animation-delay-600">
             <a
               href="#termin"
-              className="group inline-block px-10 py-4 bg-white/20 backdrop-blur-sm border border-white/40 text-white text-sm uppercase tracking-[0.2em] font-light hover:bg-white/30 transition-all duration-500 hover:scale-105 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
+              className="group inline-block px-10 py-4 bg-white text-teal-900 text-sm uppercase tracking-[0.2em] font-normal hover:bg-white/90 transition-all duration-500 hover:scale-105 shadow-lg"
             >
               Termin vereinbaren
             </a>
