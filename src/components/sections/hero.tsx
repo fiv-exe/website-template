@@ -8,19 +8,19 @@ export default function Hero() {
       <div className="min-h-screen flex items-center justify-center px-6 md:px-8">
         <div className="max-w-4xl w-full text-center space-y-8">
           {/* Badge */}
-          <p className="text-white/80 text-xs tracking-[0.35em] uppercase font-light animate-fade-up">
+          <p className="text-white text-xs tracking-[0.35em] uppercase font-light animate-fade-up drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
             &#10022; [Ihre Branche] in [Ihre Stadt] &#10022;
           </p>
 
           {/* Heading */}
-          <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-display font-light leading-[1.05] animate-fade-up animation-delay-200">
+          <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-display font-light leading-[1.05] animate-fade-up animation-delay-200 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             Qualitat
             <br />
             trifft <em className="italic text-emerald-200">Leidenschaft</em>
           </h1>
 
           {/* Subtext */}
-          <p className="text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-xl mx-auto animate-fade-up animation-delay-400">
+          <p className="text-white text-lg md:text-xl font-light leading-relaxed max-w-xl mx-auto animate-fade-up animation-delay-400 drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             Ihr Moment der Exzellenz. Erstklassiger Service, der Ihre
             Erwartungen ubertrifft &mdash; mit Liebe zum Detail.
           </p>
@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="pt-4 animate-fade-up animation-delay-600">
             <a
               href="#termin"
-              className="group inline-block px-10 py-4 bg-white/15 backdrop-blur-sm border border-white/25 text-white text-sm uppercase tracking-[0.2em] font-light hover:bg-white/25 transition-all duration-500 hover:scale-105"
+              className="group inline-block px-10 py-4 bg-white/20 backdrop-blur-sm border border-white/40 text-white text-sm uppercase tracking-[0.2em] font-light hover:bg-white/30 transition-all duration-500 hover:scale-105 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]"
             >
               Termin vereinbaren
             </a>

@@ -32,10 +32,10 @@ export default function Navbar() {
       <a
         href="#"
         className={`font-display text-2xl tracking-wide transition-colors duration-300 ${
-          scrolled ? "text-slate-900" : "text-white"
+          scrolled ? "text-slate-900" : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
         }`}
       >
-        [Ihr <span className="text-teal-400">Unternehmen</span>]
+        [Ihr <span className={scrolled ? "text-teal-400" : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"}>Unternehmen</span>]
       </a>
 
       {/* Desktop links */}
@@ -48,10 +48,10 @@ export default function Navbar() {
                 link.highlight
                   ? scrolled
                     ? "text-teal-600 border border-teal-600 px-4 py-2 hover:bg-teal-600 hover:text-white"
-                    : "text-white border border-white/40 px-4 py-2 hover:bg-white/15"
+                    : "text-white border border-white/50 px-4 py-2 hover:bg-white/15 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
                   : scrolled
                   ? "text-slate-700"
-                  : "text-white"
+                  : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
               }`}
             >
               {link.label}
